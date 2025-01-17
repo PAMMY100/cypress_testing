@@ -14,10 +14,18 @@ describe("Skip Test Suite", () => {
 
   })
 
-  it("Hook Test 2", () => {
+  it.skip("Hook Test 2", () => {
 
     cy.get('input[name="q"]').eq(1).then((element) => {
       cy.log('Text from Nairaland 2: '+element.text())
+    })
+
+  })
+
+  it("Hook Test 3", () => {
+
+    cy.get('input[name="q"]').eq(1).then((element) => {
+      cy.log('Text from Nairaland 3: '+element.text())
     })
 
   })
