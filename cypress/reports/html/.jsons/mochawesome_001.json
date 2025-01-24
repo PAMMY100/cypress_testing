@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-01-24T21:37:29.874Z",
+    "end": "2025-01-24T21:37:52.815Z",
+    "duration": 22941,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "ad452a47-6966-4413-974a-95aec087def0",
+      "title": "",
+      "fullFile": "cypress\\e2e\\CypressSelctorTest.cy.js",
+      "file": "cypress\\e2e\\CypressSelctorTest.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "dc0d36ad-607b-4fcd-a00a-06799c153265",
+          "title": "Cypress Selectors Suite",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Cypress Selectors Test",
+              "fullTitle": "Cypress Selectors Suite Cypress Selectors Test",
+              "timedOut": null,
+              "duration": 15544,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://www.youtube.com/@testerstalk');\n// cy.get('textarea[name=\"q\"]').then((element) => {\n//   cy.log('Text from Google 1: '+ element.text())\n// })\n// cy.get(\"#APjFqb\").then((element) => {\n//   cy.log('Text from Google 2: '+ element.text())\n// })\n// //first element\n// // cy.get(\"div[role='list'] > div[role='listitem']\").first().click();\n// //index element\n// cy.get(\"div[role='list'] > div[role='listitem']\").eq(1).click();\n// cy.get(\"button[type^='sub']\").click()\ncy.get(\"yt-tab-shape\").eq(1).click();",
+              "err": {},
+              "uuid": "a79307bd-4624-4ad8-984f-6f2d43517945",
+              "parentUUID": "dc0d36ad-607b-4fcd-a00a-06799c153265",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "a79307bd-4624-4ad8-984f-6f2d43517945"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 15544,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress\\reports\\html\\.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

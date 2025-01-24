@@ -1,0 +1,124 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-01-24T21:39:06.056Z",
+    "end": "2025-01-24T21:39:38.463Z",
+    "duration": 32407,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "e253bf54-9dad-4302-9c1d-ad4f7f0a5d32",
+      "title": "",
+      "fullFile": "cypress\\e2e\\MyFirstTest.cy.js",
+      "file": "cypress\\e2e\\MyFirstTest.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "4f355f82-aa46-48e1-962e-942165ec2949",
+          "title": "Test Suite 1",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "My First Test",
+              "fullTitle": "Test Suite 1 My First Test",
+              "timedOut": null,
+              "duration": 14727,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://www.youtube.com');\n// cy.get('input[name=\"search_query\"]').select('')\ncy.get('.ytSearchboxComponentInput').type('javascript by testers talk');\ncy.get('.ytSearchboxComponentSearchButton > yt-icon ').click();",
+              "err": {},
+              "uuid": "475c659d-d024-40e5-9073-0d3dcb8cddf6",
+              "parentUUID": "4f355f82-aa46-48e1-962e-942165ec2949",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Test 2",
+              "fullTitle": "Test Suite 1 Test 2",
+              "timedOut": null,
+              "duration": 10370,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.log('Test Started');\ncy.visit('https://www.youtube.com');\ncy.log('Navigated to youtube');\n// cy.get('input[name=\"search_query\"]').select('')\ncy.get('.ytSearchboxComponentInput').type('javascript by testers talk');\ncy.get('.ytSearchboxComponentSearchButton > yt-icon ').click();\ncy.log('Test completed successfully');",
+              "err": {},
+              "uuid": "fef636cf-0d6c-43e2-9d60-c27d33cf6f11",
+              "parentUUID": "4f355f82-aa46-48e1-962e-942165ec2949",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "475c659d-d024-40e5-9073-0d3dcb8cddf6",
+            "fef636cf-0d6c-43e2-9d60-c27d33cf6f11"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 25097,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress\\reports\\html\\.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

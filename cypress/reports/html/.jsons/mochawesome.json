@@ -1,0 +1,109 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2025-01-24T21:37:10.676Z",
+    "end": "2025-01-24T21:37:25.132Z",
+    "duration": 14456,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "23e20738-2452-4856-bacc-d9c6ac807ce6",
+      "title": "",
+      "fullFile": "cypress\\e2e\\CypressAssertionTest.cy.js",
+      "file": "cypress\\e2e\\CypressAssertionTest.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "85bbde53-73a3-4dc9-a808-7a0d250fbc4e",
+          "title": "Assertion tests",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "first test",
+              "fullTitle": "Assertion tests first test",
+              "timedOut": null,
+              "duration": 8307,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      \"\\\\CypressAssertionTest.cy.js\\\\Assertion tests -- first test (failed).png\"\n    ]\n  ]\n}",
+              "code": "cy.visit('https://www.google.com/search?q=javascript+by+tester+talk');\ncy.get('textarea[name=\"q\"]').then(element => {\n  expect(element.text()).to.equal('javascript by tester talk');\n});\ncy.get('textarea[name=\"q\"]').should(\"have.text\", \"javascript by tester talk\");\ncy.get('textarea[name=\"q\"]').should(\"contain\", \"javascript by tester talk\");\ncy.get('textarea[name=\"q\"]').should(\"be.visible\");\ncy.get('textarea[name=\"q\"]').should(\"have.html\", \"javascript by tester talk\").and(\"have.attr\", \"value\");\ncy.get('textarea[name=\"q\"]').should(\"have.html\", \"javascript by tester talk\").and(\"have.attr\", \"value\").and(\"include\", \"javascript by tester talk\");\ncy.get('textarea[name=\"q\"]').then(element => {\n  expect(element.text()).to.have.length(25);\n});",
+              "err": {
+                "message": "ReferenceError: The following error originated from your application code, not from Cypress.\n\n  > solveSimpleChallenge is not defined\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application",
+                "estack": "ReferenceError: The following error originated from your application code, not from Cypress.\n\n  > solveSimpleChallenge is not defined\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n    at onload (https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Djavascript%2Bby%2Btester%2Btalk%26sei%3DXwiUZ-SOKOyqkdUPv82biQE&q=EgRpcU_8GOCQ0LwGIjAWHJUHzs6fb2UnteZqBrL9uzWOey5f82JJPukGvf4RdpNWAw9XvzHNZ_EuJGzkm1AyAXJaAUM:4:316)",
+                "diff": null
+              },
+              "uuid": "7c525364-240f-4d39-a0b7-8fac0a919df5",
+              "parentUUID": "85bbde53-73a3-4dc9-a808-7a0d250fbc4e",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "7c525364-240f-4d39-a0b7-8fac0a919df5"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 8307,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress\\reports\\html\\.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

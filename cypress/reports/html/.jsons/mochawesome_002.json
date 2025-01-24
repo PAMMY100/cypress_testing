@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-01-24T21:38:07.850Z",
+    "end": "2025-01-24T21:38:19.491Z",
+    "duration": 11641,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "a23e66a1-ce41-4fc9-9eec-7f715878a8f5",
+      "title": "",
+      "fullFile": "cypress\\e2e\\DropdownTest.cy.js",
+      "file": "cypress\\e2e\\DropdownTest.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "6ffa436d-52ca-47b0-ac15-9e33acc922e0",
+          "title": "Dropdwon test suite",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "dropdown test",
+              "fullTitle": "Dropdwon test suite dropdown test",
+              "timedOut": null,
+              "duration": 4362,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"https://example.cypress.io/commands/actions\");\n// cy.get('.action-select').select(2) //index\n// cy.get('.action-select').select('bananas') //visible text\ncy.get('.action-select').select('fr-oranges'); //value",
+              "err": {},
+              "uuid": "e7a128f2-2057-4787-851e-4927d5ba5c28",
+              "parentUUID": "6ffa436d-52ca-47b0-ac15-9e33acc922e0",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "e7a128f2-2057-4787-851e-4927d5ba5c28"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 4362,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress\\reports\\html\\.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

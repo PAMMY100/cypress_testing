@@ -15,7 +15,7 @@ describe("Page Object", () => {
     resultPage.goToPlaylist()
 
     //Validate playlist title
-    playlistPage.elements.playlistTitle().should('have.text', 'Api Testing by Testers Talk')
+    playlistPage.elements.playlistTitle().should('have.text', 'API Testing Postman Tutorial Full Course 2024')
   })
 
 })
